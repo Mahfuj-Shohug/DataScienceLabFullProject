@@ -418,7 +418,7 @@
                                         placeholder="Enter group member number in your team" name="trid">
                                         @error('trid') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit Your Information</button>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Hackthon</button>
                             </form>
                         </div>
                     </div>
@@ -476,7 +476,7 @@
                                         placeholder="Enter transaction id of your transaction" name="trid">
                                         @error('trid') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Seminar</button>
                             </form>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                         </p>
 
                         <div>
-                            <form action="{{route('seminarinfo.store')}}"  method="POST">
+                            <form action="{{route('workshopinfo.store')}}"  method="POST">
                                 @csrf
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Enter Your Name*</label>
@@ -510,10 +510,10 @@
                                         @error('dept') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Seminar Name which one you will attend*</label>
+                                    <label for="exampleInputEmail1">Enter Workshop Name which one you will attend*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="sname">
-                                        @error('sname') <p class="text-danger">{{$message}}</p> @enderror
+                                        placeholder="Enter university name of your team" name="wname">
+                                        @error('wname') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Ente Phone Number*</label>
@@ -534,7 +534,7 @@
                                         placeholder="Enter transaction id of your transaction" name="trid">
                                         @error('trid') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Workshop</button>
                             </form>
                         </div>
                    </div>

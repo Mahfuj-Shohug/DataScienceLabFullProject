@@ -20,6 +20,8 @@ Route::get('/summit2021', "summitController@summit");
 Route::post('/summitinfo', "summitController@storeHackathonReg")->name('summitinfo.store');
 Route::get('/summit2021', "seminarControllers@seminar");
 Route::post('/seminarinfo', "seminarControllers@storeSeminarReg")->name('seminarinfo.store');
+Route::get('/summit2021', "workshopController@workshop");
+Route::post('/workshopinfo', "workshopController@storeWorkshopReg")->name('workshopinfo.store');
 
 
 
@@ -122,3 +124,4 @@ Route::get('/dashboard/research-topic/{brand}','ResearchTopicController@show');
 // Summit Section
 Route::get('/dashboard/hackthon','summitController@show');
 Route::get('/dashboard/seminar','seminarControllers@show');
+Route::get('/dashboard/workshop','workshopController@show');
