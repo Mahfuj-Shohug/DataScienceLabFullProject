@@ -372,60 +372,60 @@
                             <form action="{{route('summitinfo.store')}}"  method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Team Name</label>
+                                    <label for="exampleInputEmail1">Enter Team Name*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
                                         placeholder="Enter your team name" name="gname">
                                         @error('gname') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Team Member 1</label>
+                                    <label for="exampleInputEmail1">Enter Team Member Name(1)*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="name1">
+                                        placeholder="Enter 1st group member name in your team" name="name1">
                                         @error('name1') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Team Member 2</label>
+                                    <label for="exampleInputEmail1">Enter Team Member Name(2)*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="name2">
+                                        placeholder="Enter 2nd group member name in your team" name="name2">
                                         @error('name2') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Team Member 3</label>
+                                    <label for="exampleInputEmail1">Enter Team Member Name(3)</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="name3">
+                                        placeholder="Enter 3rd group member name in your team" name="name3">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Phone</label>
+                                    <label for="exampleInputEmail1">Ente Phone Number*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="phone">
+                                        placeholder="Enter one group member phone number for contact" name="phone">
                                         @error('phone') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email </label>
+                                    <label for="exampleInputEmail1">Enter Email ID*</label>
                                     <input type="email" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="gmail">
+                                        placeholder="Enter one group member email in your team" name="gmail">
                                         @error('gmail') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">University</label>
+                                    <label for="exampleInputEmail1">Enter University Name*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="varsity">
+                                        placeholder="Enter university name of your team" name="varsity">
                                         @error('varsity') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Transection ID </label>
+                                    <label for="exampleInputEmail1">Transection ID*</label>
                                     <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter group member number in your team" name="trid">
+                                        placeholder="Enter transaction id of your transaction" name="trid">
                                         @error('trid') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit Your Information for Hackthon</button>
                             </form>
                         </div>
                     </div>
-                    <button type="button" class="collapsible">Registration for Seminar</button>
+                    <button type="button" class="collapsible"><b>Registration for Seminar</b></button>
                     <div class="content">
                         <p class="text-center">
-                            <h4>**For Seminar regirtration fee 100 BDT**</h4>
+                            <h4 class="text-center">**For Seminar regirtration fee 100 BDT**</h4>
                            <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt!</div>
 
                         </p>
@@ -480,10 +480,10 @@
                             </form>
                         </div>
                     </div>
-                    <button type="button" class="collapsible">Registration for workshop</button>
+                    <button type="button" class="collapsible"><b>Registration for workshop</b></button>
                     <div class="content">
                         <p class="text-center">
-                            <h4>**For Seminar regirtration fee 100 BDT**</h4>
+                            <h4 class="text-center">**For Workshop regirtration fee 100 BDT**</h4>
                            <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt!</div>
 
                         </p>
