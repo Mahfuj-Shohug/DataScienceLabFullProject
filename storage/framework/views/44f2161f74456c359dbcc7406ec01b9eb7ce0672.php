@@ -294,7 +294,7 @@
     </section><br>
 
 
-    <section id="speakers" style="background: rgb(98, 125, 156);">
+    <section id="judge" style="background: rgb(98, 125, 156);">
         <div class="container">
             <div class="row"><br>
                 <div class="col-xs-12 text-center">
@@ -853,7 +853,7 @@ unset($__errorArgs, $__bag); ?>
 
 
 
-    <section id="partnership">
+<section id="partnership" style="margin-left: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12 text-center martop60">
@@ -914,10 +914,10 @@ unset($__errorArgs, $__bag); ?>
 
             </div>
         </div>
-    </section>
+</section>
 
 
-    <section id="datahon">
+<section id="datahon">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
@@ -929,10 +929,10 @@ unset($__errorArgs, $__bag); ?>
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
 
-    <footer>
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -948,7 +948,7 @@ unset($__errorArgs, $__bag); ?>
                 </div>
             </div>
         </div>
-    </footer>
+</footer>
 
     <!-- Bootstrap core JavaScript
 

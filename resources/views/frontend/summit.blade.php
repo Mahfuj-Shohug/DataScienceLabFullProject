@@ -706,7 +706,7 @@
 
 
 
-    <section id="partnership">
+<section id="partnership" style="margin-left: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12 text-center martop60">
@@ -767,10 +767,10 @@
 
             </div>
         </div>
-    </section>
+</section>
 
 
-    <section id="datahon">
+<section id="datahon">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
@@ -782,10 +782,10 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
 
-    <footer>
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -801,7 +801,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+</footer>
 
     <!-- Bootstrap core JavaScript
 
