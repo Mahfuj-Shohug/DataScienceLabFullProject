@@ -1,0 +1,1 @@
+Hello world!<?php /**PATH C:\xampp\htdocs\DSLab\resources\views/backend/works_counter.blade.php ENDPATH**/ ?>
