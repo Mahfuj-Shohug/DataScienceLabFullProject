@@ -467,7 +467,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Hackthon</button>
                             </form>
                         </div>
                     </div>
@@ -574,14 +574,117 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Seminar</button>
                             </form>
                         </div>
                     </div>
                     <button type="button" class="collapsible">Registration for workshop</button>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+                        <p class="text-center">
+                            <h4>**For Seminar regirtration fee 100 BDT**</h4>
+                           <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt!</div>
+
+                        </p>
+
+                        <div>
+                            <form action="<?php echo e(route('workshopinfo.store')); ?>"  method="POST">
+                                <?php echo csrf_field(); ?>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Your Name*</label>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter your name" name="name">
+                                        <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter University Name*</label>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter university name of your team" name="varsity">
+                                        <?php $__errorArgs = ['varsity'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Department Name*</label>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter university name of your team" name="dept">
+                                        <?php $__errorArgs = ['dept'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Workshop Name which one you will attend*</label>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter university name of your team" name="wname">
+                                        <?php $__errorArgs = ['wname'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Ente Phone Number*</label>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter one group member phone number for contact" name="phone">
+                                        <?php $__errorArgs = ['phone'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Enter Email ID*</label>
+                                    <input type="email" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter one group member email in your team" name="gmail">
+                                        <?php $__errorArgs = ['gmail'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Transection ID*</label>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter transaction id of your transaction" name="trid">
+                                        <?php $__errorArgs = ['trid'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Workshop</button>
+                            </form>
+                        </div>
+                   </div>
                 </div>
             </div>
         </div>
