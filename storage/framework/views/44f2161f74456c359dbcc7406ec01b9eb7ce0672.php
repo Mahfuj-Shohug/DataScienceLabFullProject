@@ -24,6 +24,7 @@
     <link href="<?php echo e(asset ('summit/css/bootstrap.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset ('summit/css/font-awesome.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset ('summit/css/maind387.css?v8')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset ('summit/css.css')); ?>" rel="stylesheet">
 
     <link href="<?php echo e(asset ('summit/css/axiata-fonts.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset ('summit/css/ionicons.min.css')); ?>" rel="stylesheet">
@@ -98,6 +99,7 @@
                 <ul class="nav navbar-nav">
                     <li class="hidden-lg hidden-md"><a href="#about" class="page-scroll">About Our Program</a></li>
                     <li class="hidden-xs hidden-sm"><a href="#about" class="page-scroll-sm">About Our Program</a></li>
+                    <li><a href="#guests" class="page-scroll">Guests</a></li>
                     <li><a href="#speakers" class="page-scroll">Speakers</a></li>
                     <li><a href="#judge" class="page-scroll">Judge</a></li>
                     <li><a href="#prizes" class="page-scroll">Prizes</a></li>
@@ -171,33 +173,189 @@
         </div>
     </section>
 
-    <!-- <section id="speakers">
-        <section class="team-section section_t_100 section_b_70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                            <h2><span>Our Expart Lab Students</span> </h2>
+
+    <section id="guests" style="background: rgb(223, 165, 165);">
+        <div class="container">
+            <div class="row"><br>
+                <div class="col-xs-12 text-center">
+                    <h1 class="marbtm30">Honorable Guest</h1>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
                         </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 mx-auto d-block">
-                        <div class="card" style="width: 18rem;">
-                            <img class="" src="" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
                         </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
                     </div>
-                     Team Block End
+                </div>
 
-        </section>-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+    </section><br>
 
 
+
+    <section id="speakers" style="background: rgb(90, 87, 87);">
+        <div class="container">
+            <div class="row"><br>
+                <div class="col-xs-12 text-center">
+                    <h1 class="marbtm30">Seminar & Workshop Speakers</h1>
+                </div>
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+                </div>
+        </div>
+        <br>
+
+
+    </section><br>
+
+
+    <section id="speakers" style="background: rgb(98, 125, 156);">
+        <div class="container">
+            <div class="row"><br>
+                <div class="col-xs-12 text-center">
+                    <h1 class="marbtm30">Judges</h1>
+                </div>
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mx-auto d-block">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
+                        </div>
+                        <h3 class="title">Name: Comming Soon</h3>
+                        <span class="post">Designation: Comming Soon</span>
+                        <span class="post">Institution: Comming Soon</span>
+
+                    </div>
+                </div>
+                </div>
+        </div>
+        <br>
+
+
+    </section><br>
+
+
+
+    <!-- prize section -->
     <section id="prizes">
         <div class="container">
             <div class="row">
@@ -467,7 +625,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit Your Information for Hackthon</button>
                             </form>
                         </div>
                     </div>
