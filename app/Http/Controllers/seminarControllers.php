@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class seminarControllers extends Controller
 {
     public function seminar(){
-        return view('frontend.summit');
+        return view('frontend.seminar');
     }
 
     public function storeSeminarReg(Request $request){
@@ -33,7 +33,7 @@ class seminarControllers extends Controller
 
         ]);
         $seminar->save();
-        session()->flash('message', 'Registration has been  successfully Done for Seminar!');
+        session()->flash('message', 'Registration has been  successfully Done for Seminar! Please wait for the confirmation sms');
         return redirect()->back();
 
         }

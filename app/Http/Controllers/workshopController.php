@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class workshopController extends Controller
 {
     public function workshop(){
-        return view('frontend.summit');
+        return view('frontend.workshop');
     }
 
     public function storeWorkshopReg(Request $request){
@@ -33,7 +33,7 @@ class workshopController extends Controller
 
         ]);
         $workshop->save();
-        session()->flash('message', 'Registration has been  successfully Done for Workshop!');
+        session()->flash('message', 'Registration has been  successfully Done for Workshop! Please wait for the confirmation sms');
         return redirect()->back();
 
         }

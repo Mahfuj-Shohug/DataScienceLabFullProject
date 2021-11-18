@@ -118,61 +118,120 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration For Semianr</h2>
+                    <div style="background-color: red">
+                        <?php if(Session::has('message')): ?>
+                        <div class="alert alert-success" role="alert"><?php echo e(Session::get('message')); ?></div>
+                         <?php endif; ?>
+                    </div>
+                    <h2 class="title">Registration For Seminar</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, libero.</p><br>
-                    <form method="POST">
+
+                    <form action="<?php echo e(route('seminarinfo.store')); ?>"  method="POST">
+                        <?php echo csrf_field(); ?>
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="NAME" name="name">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter your name*" name="name">
+                                <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter university name*" name="varsity">
+                                <?php $__errorArgs = ['varsity'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter department name*" name="dept">
+                             <?php $__errorArgs = ['dept'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter Seminar Name which one you will attend*" name="sname">
+                             <?php $__errorArgs = ['sname'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Ente Phone Number*" name="phone">
+                             <?php $__errorArgs = ['phone'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="gname" aria-describedby="gname"
+                            placeholder="Enter Email ID*" name="gmail">
+                            <?php $__errorArgs = ['gmail'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE"
-                                        name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">GENDER</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Other</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">CLASS</option>
-                                    <option>Class 1</option>
-                                    <option>Class 2</option>
-                                    <option>Class 3</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-1" type="text" placeholder="REGISTRATION CODE"
-                                        name="res_code">
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter transaction id*" name="trid">
+                                        <?php $__errorArgs = ['trid'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                            <button class="btn btn--radius btn--green" type="submit">Submit Your Registration</button>
                         </div>
                     </form>
                 </div>
+
+            <section>
+                <div style="text-align: center">
+                    <a href="<?php echo e(url('/summit2021')); ?>">Go back to main Summit-2021 page</a>
+                </div>
+            </section>
             </div>
         </div>
     </div>
+
+
 
     <script src="<?php echo e(asset('vendor/jquery/jquery.min.js')); ?>"></script>
 

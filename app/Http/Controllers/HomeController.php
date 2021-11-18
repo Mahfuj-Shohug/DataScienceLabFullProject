@@ -67,21 +67,14 @@ class HomeController extends Controller
         $brand = DB::table('logos')->latest()->first();
         return view('frontend.curriculum' , compact('brand'));
     }
-    public function hackthon(){
-        // $brand = DB::table('logos')->latest()->first();
-        return view('frontend.hackthon');
-    }
-    public function seminar(){
-        // $brand = DB::table('logos')->latest()->first();
-        return view('frontend.seminar');
-    }
-    public function workshop(){
-        // $brand = DB::table('logos')->latest()->first();
-        return view('frontend.workshop');
-    }
+
     public function guests(){
         // $brand = DB::table('logos')->latest()->first();
         return view('frontend.guests');
+    }
+    public function summit(){
+        // $brand = DB::table('logos')->latest()->first();
+        return view('frontend.summit');
     }
 
 

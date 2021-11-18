@@ -15,19 +15,17 @@ Route::get('/events', "HomeController@events");
 Route::get('/resources', "HomeController@resources");
 Route::get('/contact', "HomeController@contact");
 Route::post('/contact/store', "HomeController@contact_store");
-Route::get('/summit2021', "summitController@summit");
+Route::get('/summit2021', "homeController@summit");
 
 // Registration Route
 Route::get('/summit2021-hackthon', "summitController@summit");
 Route::post('/summitinfo', "summitController@storeHackathonReg")->name('summitinfo.store');
-Route::get('/summit2021', "seminarControllers@seminar");
+Route::get('/summit2021-seminar', "seminarControllers@seminar");
 Route::post('/seminarinfo', "seminarControllers@storeSeminarReg")->name('seminarinfo.store');
-Route::get('/summit2021', "workshopController@workshop");
+Route::get('/summit2021-workshop', "workshopController@workshop");
 Route::post('/workshopinfo', "workshopController@storeWorkshopReg")->name('workshopinfo.store');
 
-// Route::get('/summit2021-hackthon', "HomeController@hackthon");
-Route::get('/summit2021-seminar', "HomeController@seminar");
-Route::get('/summit2021-workshop', "HomeController@workshop");
+
 Route::get('/summit2021-guests', "HomeController@guests");
 
 
