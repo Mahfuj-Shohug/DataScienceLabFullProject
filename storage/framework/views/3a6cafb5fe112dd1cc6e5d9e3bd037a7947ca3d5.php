@@ -119,7 +119,7 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration For Hackthon</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, libero.</p><br>
                     <form method="POST">
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="NAME" name="name">

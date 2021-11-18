@@ -546,9 +546,9 @@
                                 <div class="dropdown">
                                     <button onclick="myFunction()" class="dropbtn">Dropdown</button>
                                     <div id="myDropdown" class="dropdown-content">
-                                      <a href="#">Link 1</a>
-                                      <a href="#">Link 2</a>
-                                      <a href="#">Link 3</a>
+                                      <a href="<?php echo e(url('/summit2021-hackthon')); ?>">Hackthon</a>
+                                      <a href="<?php echo e(url('/summit2021-seminar')); ?>">Seminar</a>
+                                      <a href="<?php echo e(url('/summit2021-workshop')); ?>">workshop</a>
                                     </div>
                                   </div>
                             </div>
