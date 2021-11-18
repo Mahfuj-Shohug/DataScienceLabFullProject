@@ -173,13 +173,13 @@
         </div>
     </section>
 
-
+    <div class="text-center">
+        <h1 class="marbtm30">Honorable Guest</h1>
+    </div>
     <section id="guests" style="background: rgb(223, 165, 165);">
         <div class="container">
             <div class="row"><br>
-                <div class="col-xs-12 text-center">
-                    <h1 class="marbtm30">Honorable Guest</h1>
-                </div>
+
                 <div class="col-md-3 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
@@ -233,13 +233,13 @@
     </section><br>
 
 
-
+    <div class="text-center">
+        <h1 class="marbtm30">Seminar & Workshop Speakers</h1>
+    </div>
     <section id="speakers" style="background: rgb(90, 87, 87);">
         <div class="container">
             <div class="row"><br>
-                <div class="col-xs-12 text-center">
-                    <h1 class="marbtm30">Seminar & Workshop Speakers</h1>
-                </div>
+
                 <div class="col-md-3 col-sm-6 mx-auto d-block">
                     <div class="our-team">
                         <div class="pic">
@@ -294,12 +294,13 @@
     </section><br>
 
 
-    <section id="judge" style="background: rgb(98, 125, 156);">
+    <section id="judge" style="background: rgb(12, 12, 12);">
         <div class="container">
             <div class="row"><br>
-                <div class="col-xs-12 text-center">
+                <div class="text-center">
                     <h1 class="marbtm30">Judges</h1>
                 </div>
+
                 <div class="col-md-3 col-sm-6 mx-auto d-block">
                     <div class="our-team">
                         <div class="pic">
@@ -983,6 +984,7 @@ unset($__errorArgs, $__bag); ?>
           });
         }
         </script>
+
 
 
 </body>
