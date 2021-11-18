@@ -118,61 +118,86 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
+                    <div style="background-color: red">
+                        @if(Session::has('message'))
+                        <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
+                         @endif
+                    </div>
                     <h2 class="title">Registration For Hackthon</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, libero.</p><br>
-                    <form method="POST">
+
+                    <form action="{{route('summitinfo.store')}}"  method="POST">
+                        @csrf
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="NAME" name="name">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                placeholder="Enter your team name*" name="gname">
+                                @error('gname') <p class="text-danger">{{$message}}</p> @enderror
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                placeholder="Enter 1st group member name*" name="name1">
+                                @error('name1') <p class="text-danger">{{$message}}</p> @enderror
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE"
-                                        name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                    placeholder="Enter 2nd group member name*" name="name2">
+                                    @error('name2') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">GENDER</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Other</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                     placeholder="Enter 3rd group member name*" name="name3">
+                                     @error('name3') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">CLASS</option>
-                                    <option>Class 1</option>
-                                    <option>Class 2</option>
-                                    <option>Class 3</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                             placeholder="Enter one phone number for contact*" name="phone">
+                             @error('phone') <p class="text-danger">{{$message}}</p> @enderror
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="gname" aria-describedby="gname"
+                            placeholder="Enter one group member email in your team*" name="gmail">
+                            @error('gmail') <p class="text-danger">{{$message}}</p> @enderror
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                            placeholder="Enter university name of your team*" name="varsity">
+                            @error('varsity') <p class="text-danger">{{$message}}</p> @enderror
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1" type="text" placeholder="REGISTRATION CODE"
-                                        name="res_code">
+                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
+                                        placeholder="Enter transaction id*" name="trid">
+                                        @error('trid') <p class="text-danger">{{$message}}</p> @enderror
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                            <button class="btn btn--radius btn--green" type="submit">Submit Your Registration</button>
                         </div>
                     </form>
                 </div>
+
+            <section>
+                <div style="text-align: center">
+                    <a href="{{ url('/summit2021') }}">Go back to main Summit-2021 page</a>
+                </div>
+            </section>
             </div>
         </div>
     </div>
+
+
+
+
+
+
 
     <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 

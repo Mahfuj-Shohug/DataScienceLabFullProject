@@ -32,10 +32,8 @@
         .dropbtn {
     background-color: rgb(54, 168, 105);
     color: white;
-    padding: 18px
-;
-    width: 159px
-;
+    padding: 18px;
+    width: 159px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -43,8 +41,8 @@
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    color: rgb(54, 168, 105);
-    background-color: white;
+    background-color: rgb(54, 168, 105);
+    color: white;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -68,7 +66,7 @@
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  /* display: block; */
+  display: block;
 }
 
 /* Change color of dropdown links on hover */
@@ -122,10 +120,7 @@
 </head>
 
 <body>
-    <?php if(Session::has('message')): ?>
-    <div class="alert alert-success" role="alert"><?php echo e(Session::get('message')); ?></div>
-        <?php endif; ?>
-
+    
 
     <nav id="mainNav" class="navbar navbar-custom navbar-fixed-top affix">
         <div class="container-fluid">

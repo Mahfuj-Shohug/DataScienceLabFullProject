@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class summitController extends Controller
 {
     public function summit(){
-        return view('frontend.summit');
+        return view('frontend.hackthon');
     }
 
     public function storeHackathonReg(Request $request){
@@ -19,6 +19,7 @@ class summitController extends Controller
             'gname' => 'required',
             'name1' => 'required',
             'name2' => 'required',
+            'name3' => 'required',
             'phone' => 'required',
             'gmail' => 'required|email',
             'varsity' => 'required',
@@ -36,7 +37,7 @@ class summitController extends Controller
 
         ]);
         $summit->save();
-        session()->flash('message', 'Registration has been  successfully Done for Hackthon!');
+        session()->flash('message', 'Registration has been  successfully Done for Hackthon! Wait for the confarmation sms');
         return redirect()->back();
 
     }
