@@ -79,6 +79,10 @@ class HomeController extends Controller
         // $brand = DB::table('logos')->latest()->first();
         return view('frontend.workshop');
     }
+    public function guests(){
+        // $brand = DB::table('logos')->latest()->first();
+        return view('frontend.guests');
+    }
 
 
 

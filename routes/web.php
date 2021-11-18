@@ -26,6 +26,7 @@ Route::post('/workshopinfo', "workshopController@storeWorkshopReg")->name('works
 Route::get('/summit2021-hackthon', "HomeController@hackthon");
 Route::get('/summit2021-seminar', "HomeController@seminar");
 Route::get('/summit2021-workshop', "HomeController@workshop");
+Route::get('/summit2021-guests', "HomeController@guests");
 
 
 // Admin login

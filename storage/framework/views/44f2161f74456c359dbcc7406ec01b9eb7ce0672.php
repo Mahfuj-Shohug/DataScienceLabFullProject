@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from www.axiata.com/datathon/bd/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 19:06:48 GMT -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,17 +30,21 @@
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset('summit/slick/slick-theme6654.css?v1')); ?>">
     <style>
         .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    background-color: rgb(54, 168, 105);
+    color: white;
+    padding: 18px
+;
+    width: 159px
+;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+    color: rgb(54, 168, 105);
+    background-color: white;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -67,11 +68,11 @@
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  /* display: block; */
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+/* .dropdown-content a:hover {background-color: #ddd} */
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -142,17 +143,9 @@
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="hidden-lg hidden-md"><a href="#about" class="page-scroll">About Our Program</a></li>
-                    <li class="hidden-xs hidden-sm"><a href="#about" class="page-scroll-sm">About Our Program</a></li>
-                    <li><a href="#guests" class="page-scroll">Guests</a></li>
-                    <li><a href="#speakers" class="page-scroll">Speakers</a></li>
-                    <li><a href="#judge" class="page-scroll">Judge</a></li>
-                    <li><a href="#prizes" class="page-scroll">Prizes</a></li>
-                    <li><a href="#schedule" class="page-scroll">Schedule</a></li>
+                    <li><a href="<?php echo e(url('/summit2021')); ?>" class="page-scroll">Home</a></li>
+                    <li><a href="<?php echo e(url('/summit2021-guests')); ?>" class="page-scroll">Guests</a></li>
                     <li><a href="#registration" class="page-scroll">Registration</a></li>
-
-
-
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -218,186 +211,8 @@
         </div>
     </section>
 
-    <div class="text-center">
-        <h1 class="marbtm30">Honorable Guest</h1>
-    </div>
-    <section id="guests" style="background: rgb(223, 165, 165);">
-        <div class="container">
-            <div class="row"><br>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <br>
-    </section><br>
 
 
-    <div class="text-center">
-        <h1 class="marbtm30">Seminar & Workshop Speakers</h1>
-    </div>
-    <section id="speakers" style="background: rgb(90, 87, 87);">
-        <div class="container">
-            <div class="row"><br>
-
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-                </div>
-        </div>
-        <br>
-
-
-    </section><br>
-
-
-    <section id="judge" style="background: rgb(12, 12, 12);">
-        <div class="container">
-            <div class="row"><br>
-                <div class="text-center">
-                    <h1 class="marbtm30">Judges</h1>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mx-auto d-block">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="<?php echo e(asset('summit/img/speakers/s1.png')); ?>">
-                        </div>
-                        <h3 class="title">Name: Comming Soon</h3>
-                        <span class="post">Designation: Comming Soon</span>
-                        <span class="post">Institution: Comming Soon</span>
-
-                    </div>
-                </div>
-                </div>
-        </div>
-        <br>
-
-
-    </section><br>
 
 
 
@@ -413,66 +228,19 @@
 
 
                 <div class="col-md-12 col-xs-12 text-center">
-                    <h2 class="text-center martop20">TEAM</h2>
                     <div class="subcontent hidden-xs hidden-sm"></div>
 
                     <div class="outlinecover page-scroll">
                         <div class="outline">
-                            <h3 class="special">Champion Team</h3>
-                            <p class="prizes">BDT 15K</p>
+                            <h3 class="special">Total Prize Money for Hackthon</h3>
+                            <p class="prizes">BDT 35K</p>
                         </div>
                     </div>
-
-                    <div class="outlinecover page-scroll">
-                        <div class="outline">
-                            <h3 class="special">First Runner-up</h3>
-                            <p class="prizes">BDT 10K</p>
-                        </div>
-                    </div>
-
-                    <div class="outlinecover page-scroll">
-                        <div class="outline">
-                            <h3 class="special">Second Runner-up</h3>
-                            <p class="prizes">BDT 5K</p>
-                        </div>
-                    </div>
-
                 </div>
-
-                <!--
-                <div class="col-md-6 col-xs-12 text-center">
-                    <div class="marbtm80 hidden-lg hidden-md"></div>
-                    <h2 class="text-center martop20">Individual</h2>
-                    <div class="subcontent hidden-xs hidden-sm"></div>
-                    <div class="outlinecover page-scroll">
-                        <div class="outline">
-                            <h3 class="special">2 Data Scientists</h3>
-                            <p class="prizes">BDT 100K each</p>
-
-                        </div>
-                    </div>
-
-                    <div class="outlinecover page-scroll">
-                        <div class="outline">
-                            <h3 class="special">2 Data Engineers</h3>
-                            <p class="prizes">BDT 100K each</p>
-
-                        </div>
-                    </div>
-
-
-                </div>
- -->
-
-
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center martop40">
                     <p class="mininotes"></p>
                 </div>
 
-            </div>
-
-            <div style="text-align: center">
-                <span style="color:#ffffff">*Data Science Lab DIU</span>
             </div>
         </div>
     </section>
@@ -544,7 +312,7 @@
                             <p>Participants will be invited to complete an online assessment to qualify for the datathon.</p>
                             <div class="marbtm20 clearfix">
                                 <div class="dropdown">
-                                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                    <button onclick="myFunction()" class="dropbtn">Registration</button>
                                     <div id="myDropdown" class="dropdown-content">
                                       <a href="<?php echo e(url('/summit2021-hackthon')); ?>">Hackthon</a>
                                       <a href="<?php echo e(url('/summit2021-seminar')); ?>">Seminar</a>
@@ -696,9 +464,7 @@
             }
           });
         }
-        </script>
 
-        <script>
             /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {

@@ -56,7 +56,7 @@ body {
         /*    background: url(../img/dataunchained-bgsm-01.jpg) #040d16 top center no-repeat;*/
     }
 
-    
+
 }
 
 @media (min-width: 992px) {
@@ -114,12 +114,12 @@ h1 {
         font-size: 28px;
         line-height: 30px;
     }
-    
+
     header .precap{
     font-family: 'axiatabold';
     font-size: 18px;
         margin-top: 5px
-        
+
 }
 }
 
@@ -834,14 +834,11 @@ footer {
     }
 }
 
-.navbar-collapse {
-    border-color: rgba(29, 26, 32, 0.96);
-}
 
 .navbar-toggle {
-    background-color: transparent;
-    border-color: transparent;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1035,7 +1032,7 @@ header a.arrowdown span span {
     #home {
         padding-top: 0px;
     }
-    
+
     header a.arrow-down {
     position: absolute;
     bottom: 0px;
@@ -1184,7 +1181,7 @@ header a.arrowdown span span {
 }
 
 #registration a {
-    color: #fff;
+    color: #36a869;
     text-transform: uppercase;
 }
 
