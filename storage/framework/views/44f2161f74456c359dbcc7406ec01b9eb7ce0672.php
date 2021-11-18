@@ -31,6 +31,51 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset('summit/slick/slick.css')); ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset('summit/slick/slick-theme6654.css?v1')); ?>">
+    <style>
+        .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+    </style>
 
     <style>
         .collapsible {
@@ -489,7 +534,7 @@
 
                 <div class="col-xs-12 text-center">
                     <h1>Registration process</h1>
-                    <p class="marbtm40">(Starting from 25<sup>th</sup> March to 15<sup>th</sup> April 2019)</p>
+                    <p class="marbtm40">(Starting from 25<sup>th</sup> March to 15<sup>th</sup> April 2021)</p>
                 </div>
 
                 <div class="col-md-offset-3 col-md-6 col-xs-12 equal-box">
@@ -497,10 +542,17 @@
                         <div class="outline">
                             <h2>Register as a<br class="hidden-xs hidden-sm">participant</h2>
                             <p>Participants will be invited to complete an online assessment to qualify for the datathon.</p>
-                            <div class="marbtm20 clearfix"></div>
-                            <a href="#challenge">
-                                Register now
-                            </a>
+                            <div class="marbtm20 clearfix">
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                  </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -509,345 +561,6 @@
     </section>
 
 
-    <section id="challenge">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-8 col-md-offset-2 col-xs-12 text-center marbtm50">
-                    <h1>Registered your favorite events</h1>
-
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible"><b> Registration for Hackthon </b></button>
-                    <div class="content">
-                        <p class="text-center">
-                            <h4>**For hackathon groups regirtration fee 1200 BDT (Maximum 3 person in a group)**</h4>
-                           <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt!</div>
-
-                        </p>
-
-                        <div>
-                            <form action="<?php echo e(route('summitinfo.store')); ?>"  method="POST">
-                                <?php echo csrf_field(); ?>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Team Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter your team name" name="gname">
-                                        <?php $__errorArgs = ['gname'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Team Member Name(1)*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter 1st group member name in your team" name="name1">
-                                        <?php $__errorArgs = ['name1'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Team Member Name(2)*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter 2nd group member name in your team" name="name2">
-                                        <?php $__errorArgs = ['name2'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Team Member Name(3)</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter 3rd group member name in your team" name="name3">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Ente Phone Number*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter one group member phone number for contact" name="phone">
-                                        <?php $__errorArgs = ['phone'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Email ID*</label>
-                                    <input type="email" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter one group member email in your team" name="gmail">
-                                        <?php $__errorArgs = ['gmail'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter University Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="varsity">
-                                        <?php $__errorArgs = ['varsity'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Transection ID*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter transaction id of your transaction" name="trid">
-                                        <?php $__errorArgs = ['trid'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit Your Information for Hackthon</button>
-                            </form>
-                        </div>
-                    </div>
-                    <button type="button" class="collapsible"><b>Registration for Seminar</b></button>
-                    <div class="content">
-                        <p class="text-center">
-                            <h4 class="text-center">**For Seminar regirtration fee 100 BDT**</h4>
-                           <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt!</div>
-
-                        </p>
-
-                        <div>
-                            <form action="<?php echo e(route('seminarinfo.store')); ?>"  method="POST">
-                                <?php echo csrf_field(); ?>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Your Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter your name" name="name">
-                                        <?php $__errorArgs = ['name'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter University Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="varsity">
-                                        <?php $__errorArgs = ['varsity'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Department Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="dept">
-                                        <?php $__errorArgs = ['dept'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Seminar Name which one you will attend*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="sname">
-                                        <?php $__errorArgs = ['sname'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Ente Phone Number*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter one group member phone number for contact" name="phone">
-                                        <?php $__errorArgs = ['phone'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Email ID*</label>
-                                    <input type="email" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter one group member email in your team" name="gmail">
-                                        <?php $__errorArgs = ['gmail'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Transection ID*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter transaction id of your transaction" name="trid">
-                                        <?php $__errorArgs = ['trid'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit Your Information for Seminar</button>
-                            </form>
-                        </div>
-                    </div>
-                    <button type="button" class="collapsible"><b>Registration for workshop</b></button>
-                    <div class="content">
-                        <p class="text-center">
-                            <h4 class="text-center">**For Workshop regirtration fee 100 BDT**</h4>
-                           <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt!</div>
-
-                        </p>
-
-                        <div>
-                            <form action="<?php echo e(route('workshopinfo.store')); ?>"  method="POST">
-                                <?php echo csrf_field(); ?>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Your Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter your name" name="name">
-                                        <?php $__errorArgs = ['name'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter University Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="varsity">
-                                        <?php $__errorArgs = ['varsity'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Department Name*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="dept">
-                                        <?php $__errorArgs = ['dept'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Workshop Name which one you will attend*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter university name of your team" name="wname">
-                                        <?php $__errorArgs = ['wname'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Ente Phone Number*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter one group member phone number for contact" name="phone">
-                                        <?php $__errorArgs = ['phone'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Enter Email ID*</label>
-                                    <input type="email" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter one group member email in your team" name="gmail">
-                                        <?php $__errorArgs = ['gmail'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Transection ID*</label>
-                                    <input type="text" class="form-control" id="gname" aria-describedby="gname"
-                                        placeholder="Enter transaction id of your transaction" name="trid">
-                                        <?php $__errorArgs = ['trid'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> <p class="text-danger"><?php echo e($message); ?></p> <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit Your Information for Workshop</button>
-                            </form>
-                        </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -983,6 +696,28 @@ unset($__errorArgs, $__bag); ?>
             }
           });
         }
+        </script>
+
+        <script>
+            /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
         </script>
 
 

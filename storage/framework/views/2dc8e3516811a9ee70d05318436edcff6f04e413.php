@@ -15,8 +15,8 @@
 
     <title>Registration For Hackthon</title>
 
-    <link href="{{asset('registration/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('registration/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="<?php echo e(asset('registration/vendor/mdi-font/css/material-design-iconic-font.min.css')); ?>" rel="stylesheet" media="all">
+    <link href="<?php echo e(asset('registration/vendor/font-awesome-4.7/css/font-awesome.min.css')); ?>" rel="stylesheet" media="all">
 
     <style id="" media="all">
         @font-face {
@@ -105,10 +105,10 @@
 
     </style>
 
-    <link href="{{asset('registration/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/datepicker/daterangepicker.css" rel="stylesheet')}}" media="all">
+    <link href="<?php echo e(asset('registration/vendor/select2/select2.min.css')); ?>" rel="stylesheet" media="all">
+    <link href="<?php echo e(asset('vendor/datepicker/daterangepicker.css" rel="stylesheet')); ?>" media="all">
 
-    <link href="{{asset('registration/css/main.css')}}" rel="stylesheet" media="all">
+    <link href="<?php echo e(asset('registration/css/main.css')); ?>" rel="stylesheet" media="all">
     <meta name="robots" content="noindex, follow">
 </head>
 
@@ -118,7 +118,7 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration For Hackthon</h2>
+                    <h2 class="title">Registration For Workshop</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, libero.</p><br>
                     <form method="POST">
                         <div class="input-group">
@@ -174,13 +174,13 @@
         </div>
     </div>
 
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="<?php echo e(asset('vendor/jquery/jquery.min.js')); ?>"></script>
 
-    <script src="{{asset('vendor/select2/select2.min.js')}}"></script>
-    <script src="{{asset('vendor/datepicker/moment.min.js')}}"></script>
-    <script src="{{asset('vendor/datepicker/daterangepicker.js')}}"></script>
+    <script src="<?php echo e(asset('vendor/select2/select2.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('vendor/datepicker/moment.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('vendor/datepicker/daterangepicker.js')); ?>"></script>
 
-    <script src="{{asset('js/global.js')}}"></script>
+    <script src="<?php echo e(asset('js/global.js')); ?>"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
@@ -202,3 +202,4 @@
 <!-- Mirrored from colorlib.com/etc/regform/colorlib-regform-1/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Nov 2021 09:41:05 GMT -->
 
 </html>
+<?php /**PATH H:\Projects\DSLab\resources\views/frontend/workshop.blade.php ENDPATH**/ ?>

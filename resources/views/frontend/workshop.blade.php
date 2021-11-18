@@ -118,7 +118,7 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration For Hackthon</h2>
+                    <h2 class="title">Registration For Workshop</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, libero.</p><br>
                     <form method="POST">
                         <div class="input-group">
